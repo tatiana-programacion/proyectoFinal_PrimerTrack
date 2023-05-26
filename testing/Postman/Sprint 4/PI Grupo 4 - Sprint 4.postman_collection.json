@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "30a7d3fa-3a0e-4f10-ae05-f6ea32059af9",
+		"name": "PI Grupo 4 - Sprint 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22405154"
+	},
+	"item": [
+		{
+			"name": "API Caracteristicas",
+			"item": [
+				{
+					"name": "Find all",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Features load must be valid and have a body\", () => {",
+									"    pm.response.to.have.status(200); // validar que nos devuelva un 200",
+									"    pm.response.to.be.withBody; // validar que exista el body",
+									"    pm.response.to.be.json; // validar que sea JSON",
+									"    pm.response.to.be.an(\"object\"); // validar que sea un objeto",
+									"});",
+									"",
+									"let featureSchema = {",
+									"    \"properties\": {",
+									"        \"id\": {\"type\": \"integer\"},",
+									"        \"nombre\": {\"type\": \"string\"},",
+									"        \"icono\": {\"type\": \"string\"}",
+									"    }",
+									"};",
+									"",
+									"",
+									"tv4.addSchema('featureSchema', featureSchema);",
+									"",
+									"let schema = {",
+									"    \"type\": \"array\",",
+									"    \"items\": {\"$ref\": \"featureSchema\"}",
+									"};",
+									"",
+									"const jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Features schema is valid\", () => {",
+									"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/caracteristicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"caracteristicas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API Productos",
+			"item": [
+				{
+					"name": "Find by city and date range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", () => {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									"pm.test(\"Correct product returned\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData[0].id).to.eql(11);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/productos/ciudadyfechas?idCiudad=4&fechaInicial=2022-12-14&fechaFinal=2022-12-16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"ciudadyfechas"
+							],
+							"query": [
+								{
+									"key": "idCiudad",
+									"value": "4"
+								},
+								{
+									"key": "fechaInicial",
+									"value": "2022-12-14"
+								},
+								{
+									"key": "fechaFinal",
+									"value": "2022-12-16"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

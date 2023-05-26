@@ -1,0 +1,155 @@
+.search {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 26px;
+        color: var(--white);
+        text-align: center;
+        padding: 28px 11px 14px 11px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+        max-width: 1200px;
+        .location, .field-calendar {
+            width: 100%;
+            position: relative;
+        }
+        input, select {
+            margin: 4px 0px;
+            height: 35px;
+            border-radius: 5px;
+            padding-left: 30px;
+            font-size: 14px;
+            font-family: 'Quicksand', sans-serif;;
+            color: var(--black);
+            width: 100%;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            option {
+                display: none;
+            }
+        }
+        
+        .location::before, .field-calendar::before {
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f3c5";
+            color: var(--black);
+            position: absolute;
+            top: 11px;
+            font-size: 21px;
+            left: 9px;
+            z-index: 1;
+        }
+
+        .field-calendar::before {
+            content: "\f783";
+            left: 6px;
+        }
+        
+        .search-button {
+            margin: 4px 0px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            height: 40px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .select-city {
+            position: absolute;
+            background-color: var(--white);
+            z-index: 2;
+            width: 100%;
+            max-height: 227px;
+            overflow-y: auto;
+        }
+
+        .option-city {
+            padding: 10px 34px;
+            border-bottom: 1px solid var(--primary-color);
+            margin: 0px 10px;
+            position: relative;
+            cursor: pointer;
+            i {
+                position: absolute;
+                top: 16px;
+                font-size: 21px;
+                left: 0px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 700;
+                color: var(--black);
+                &:last-child {
+                    color: var(--grey);
+                    font-weight: 500;
+                }
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        h1 {
+            padding-bottom: 8px; 
+        }
+        form {
+            flex-direction: row;
+            > div {
+                margin: 0px 10px;
+                input, select {
+                    height: 40px;
+                }
+            }
+            .search-button {
+                width: 300px;
+                height: 40px;
+            }
+            .location::before {
+                top: 11px;
+                font-size: 21px;
+                left: 9px;
+            }
+    
+            .calendar::before {
+                color: var(--black);
+                position: absolute;
+                top: 11px;
+                font-size: 19px;
+                left: 9px;
+            }
+            .select-city {
+                margin: 0;
+            }
+        }
+    }
+    @media screen and (min-width: 1024px){
+        h1 {
+            font-size: 36px;
+            color: var(--white);
+            text-align: center;
+            padding: 28px 11px 14px 11px;
+        }
+        form {
+            .option-city{
+                &:hover{
+                    color: var(--primary-color);
+                    p {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.reserva-details {
+    background-color: var(--background-grey);
+    padding-bottom: 20px;
+    .reserva-content{
+        max-width: 1300px;
+        margin: 0 auto;
+        .reserva-card{
+            background-color: var(--white);
+            width: 96%;
+            margin: 0 auto;
+            border-radius: 8px;
+            border: 1px solid #DFE4EA;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            h2 {
+                padding: 20px 0px 10px 10px;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+                max-height: 280px;
+            }
+            .content{
+                padding: 15px;
+                .category {
+                    color: var(--soft-grey);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+                span{
+                    i{
+                        font-size: 12px;
+                        color: var(--primary-color)
+                    }
+                }
+                .location {
+                    color: var(--grey);
+                    margin-top: 12px;
+                    margin-bottom: 10px;
+                    i {
+                        padding-right: 8px;
+                    }
+                }
+                > div {
+                    border-bottom: 1px solid var(--soft-grey);
+                    padding: 16px 0px 12px 0px;
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        font-weight: 700;
+                        
+                    }
+                }
+                .check-in{
+                    border-top: 1px solid var(--soft-grey);
+                }
+                button {
+                    background-color: var(--primary-color);
+                    color: var(--white);
+                    font-weight: 700;
+                    display: block;
+                    margin: 35px auto 4px auto;
+                    width: 96%;
+                    padding: 13px;
+                    font-size: 16px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    margin-bottom: 20px;
+                }
+                .error{
+                    color: red;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+            
+        }
+        @media screen and (min-width: 768px){
+            .reserva-card {
+                padding: 20px;
+                h2 {
+                    padding-left: 0;
+                    padding-top: 0;
+                }
+                > div {
+                    display: flex;
+                    img {
+                        width: 50%;
+                    }
+                    .content{
+                        width: 50%;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        .location {
+                            margin-bottom: 30px;
+                        }
+                        button {
+                            margin-top: 55px;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+    @media screen and (min-width: 1024px){
+        height: 100%;
+        .reserva-content {
+            height: 100%;
+            .reserva-card {
+                height: 100%;
+                padding: 20px;
+                padding: 0px;
+                h2 {
+                    padding: 40px 0px 30px 10px;
+                }
+                > div {
+                    flex-direction: column;
+                    img {
+                        width: 100%;
+                    }
+                    .content{
+                        width: 100%;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.administracion{
+    background-color: #EEEEF1;
+    .container{
+        max-width: 1300px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        h1{
+            padding: 18px 10px;
+            font-size: 22px;
+            color: var(--black);
+        }
+        h2{
+            font-size: 20px;
+            color: var(--grey);
+            padding: 20px 0px 12px 0px;
+        }
+        h3{
+            font-size: 16px;
+            color: var(--grey);
+        }
+        p{
+            font-size: 14px;
+            color: var(--grey);
+        }
+        form{
+            background: #FFFFFF;
+            border: 1px solid var(--soft-grey);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            padding: 0px 20px 20px 20px;
+            background-color: var(--white);
+            label{
+                color: var(grey);
+                font-size: 12px;
+                font-weight: 500;
+                margin: 24px 0px 10px 0px;
+            }
+            input, select, textarea {
+                background: #FFFFFF;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                padding: 12px 10px;
+                resize: none;
+                option {
+                    display: none;
+                }
+                &::placeholder{
+                    font-family: 'Quicksand', sans-serif;
+                }
+            }
+            .error{
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 10px;
+                p{
+                    color: red;
+                    align-self: flex-end;
+                    padding: 0px;
+                }
+            }
+            .create {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button {
+                    background-color: var(--primary-color);
+                    color: var(--white);
+                    font-weight: 700;
+                    box-shadow: 0px 2px 4px rgb(0 0 0 / 12%);
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 448px;
+                    padding: 15px;
+                    font-size: 16px;
+                    border-radius: 8px;
+                    margin-top: 26px;
+                    cursor: pointer;
+                }
+            }
+        }
+        @media screen and (min-width: 768px){
+            padding: 0px 2%;
+            form {
+                .create{
+                    
+                }
+            }
+        }
+    }
+    
+}

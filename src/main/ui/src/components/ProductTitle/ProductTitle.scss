@@ -1,0 +1,38 @@
+.product-title {
+    padding-top: 82px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 10px 8px 10px;
+    .product-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    
+    > div {
+        h4 {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+    }
+    i {
+        color: var(--white);
+        font-size: 24px;
+    }
+    
+
+    @media screen and (min-width: 768px){
+        padding: 20px 30px 6px 30px;
+    }
+    @media screen and (min-width: 1024px){
+        padding: 14px 30px 6px 30px;
+        i {
+            font-size: 30px;
+        }
+    }
+
+}

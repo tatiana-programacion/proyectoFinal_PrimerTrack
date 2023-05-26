@@ -1,0 +1,112 @@
+[
+    {
+        "id" : 1,
+        "img" : "https://images.unsplash.com/photo-1590447158019-883d8d5f8bc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+        "categoria" : {
+            "id": 1
+        },
+        "ciudad": {
+            "id": 4
+        },
+        "title" : "Hotel Uno",
+        "location" : "Buenos Aires",
+        "description" : "Leopard. Abyssinian cheetah for lion ragdoll lynx. Manx siamese and ocelot. Lion siberian manx norwegian forest kitten singapura so manx. Manx tabby and manx thai so kitty so abyssinian so manx. Puma. Kitty turkish angora abyssinian . Lynx ocelot or cheetah but cheetah so devonshire rex or tom."
+    },
+    {
+        "id" : 2,
+        "img" : "https://images.unsplash.com/photo-1578991624414-276ef23a534f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1027&q=80",
+        "categoria" : {
+            "id": 1
+        },
+        "ciudad": {
+            "id": 3
+        },
+        "title" : "Hotel Dos",
+        "location" : "Mendoza",
+        "description" : "Norwegian forest malkin. Tomcat maine coon yet cougar or tabby yet sphynx so tiger. Russian blue malkin yet ocelot. Kitty egyptian mau, ocelot for sphynx jaguar himalayan. Malkin cornish rex for bombay. American shorthair singapura panther or burmese kitty bombay. Bengal turkish angora abyssinian so leopard russian blue. Birman jaguar for cougar. "
+    }
+    ,
+    {
+        "id" : 3,
+        "img" : "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "categoria" : {
+            "id": 2
+        },
+        "ciudad": {
+            "id": 2
+        },
+        "title" : "Casa Uno",
+        "location" : "Rosario",
+        "description" : "British shorthair cheetah turkish angora but manx. American shorthair kitten so havana brown and maine coon british shorthair but lynx so bombay. American bobtail kitty so kitty, siamese lynx or mouser. Leopard kitty. Abyssinian burmese and havana brown but ragdoll ocicat and devonshire rex. Kitty burmese siamese."
+    }
+    ,
+    {
+        "id" : 4,
+        "img" : "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "categoria" : {
+            "id": 2
+        },
+        "ciudad": {
+            "id": 1
+        },
+        "title" : "Casa Dos",
+        "location" : "CÃ³rdoba",
+        "description" : "Balinese leopard kitten tiger kitty lynx american bobtail. Bengal british shorthair american bobtail british shorthair. Kitten ragdoll or ragdoll yet bobcat norwegian forest so egyptian mau. Manx savannah manx manx ocicat. Lion thai so birman for donskoy. "
+    }
+    ,
+    {
+        "id" : 5,
+        "img" : "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "categoria" : {
+            "id": 3
+        },
+        "ciudad": {
+            "id": 4
+        },
+        "title" : "Depto Uno",
+        "location" : "Bariloche",
+        "description" : "Ocelot. Abyssinian munchkin tiger for mouser and turkish angora, and egyptian mau. Bobcat lion sphynx for balinese , so balinese . Abyssinian lion birman. Donskoy malkin jaguar, but cougar or cougar bobcat. Tomcat puma. Burmese birman yet tabby. Devonshire rex kitten, abyssinian ."
+    }
+    ,
+    {
+        "id" : 6,
+        "img" : "https://images.unsplash.com/photo-1658218729615-167c32d70537?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+        "categoria" : {
+            "id": 3
+        },
+        "ciudad": {
+            "id": 3
+        },
+        "title" : "Depto Dos",
+        "location" : "Ushuaia",
+        "description" : "Bengal singapura for himalayan. American shorthair. Munchkin abyssinian malkin or havana brown or ragdoll so turkish angora for donskoy. Bengal tom, kitty yet egyptian mau manx. Persian himalayan, balinese or russian blue thai tiger yet bengal. "
+    }
+    ,
+    {
+        "id" : 7,
+        "img" : "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+        "categoria" : {
+            "id": 4
+        },
+        "ciudad": {
+            "id": 2
+        },
+        "title" : "Apart Uno",
+        "location" : "Salta",
+        "description" : "Lion havana brown, leopard munchkin. Ocelot munchkin siberian, but british shorthair yet norwegian forest ragdoll for lion. Savannah jaguar sphynx siberian. Balinese donskoy. Cheetah british shorthair ocicat panther and kitty or jaguar."
+    }
+    ,
+    {
+        "id" : 8,
+        "img" : "https://images.unsplash.com/photo-1633411187642-f84216917af1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1491&q=80",
+        "categoria" : {
+            "id": 4
+        },
+        "ciudad": {
+            "id": 1
+        },
+        "title" : "Apart Dos",
+        "location" : "Mar del Plata",
+        "description" : "American shorthair lynx lynx cornish rex and mouser. Donskoy tom siamese, havana brown. Grimalkin scottish fold for bobcat and norwegian forest bobcat, yet burmese. Norwegian forest malkin cornish rex so turkish angora, leopard savannah ragdoll. Singapura siamese ocicat, tiger."
+    }
+]

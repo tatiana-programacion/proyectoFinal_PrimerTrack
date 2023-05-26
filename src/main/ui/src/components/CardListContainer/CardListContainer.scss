@@ -1,0 +1,60 @@
+.card-list-container {
+    background-color: var(--black);
+    .content{
+        max-width: 1350px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        .without-results{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            p{
+                color: var(--white);
+            }
+        }
+    }
+    h2 {
+        color: var(--white);
+        padding: 15px;
+    }
+
+    @media screen and (min-width: 768px){
+        background-color: var(--soft-grey);
+        h2 {
+            color: var(--black);
+            padding-bottom: 0px;
+        }
+        .content{
+            .without-results{
+                height: 150px;
+                p{
+                    color: var(--grey);
+                }
+            }
+        }
+        .content > div {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 1024px){
+        background-color: var(--soft-grey);
+        h2 {
+            color: var(--black);
+            padding-left: 28px;
+        }
+        .content{
+            .without-results{
+                height: 250px;
+                p{
+                    color: var(--grey);
+                }
+            }
+        }
+    }
+}
+

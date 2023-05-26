@@ -1,0 +1,33 @@
+footer{
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    p {
+        font-size: 12px;
+        color: var(--white);
+    }
+    .social-network {
+        display: none;
+        i {
+            color: var(--white);
+            font-size: 28px;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        padding: 5px;
+
+        p {
+            font-size: 14px;
+        }
+        .social-network {
+            display: block;
+        }
+    }
+}

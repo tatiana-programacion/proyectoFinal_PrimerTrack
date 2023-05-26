@@ -1,0 +1,92 @@
+{
+	"id": "e715b854-f622-44b9-9aee-6640bf8fd878",
+	"name": "PI Grupo 4 - Sprint 4",
+	"timestamp": "2022-12-13T22:36:35.068Z",
+	"collection_id": "22405154-30a7d3fa-3a0e-4f10-ae05-f6ea32059af9",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "25cab17c-1e8a-4d38-b0b1-6ba5eb5c6d3a",
+			"name": "Find all",
+			"url": "http://localhost:8080/caracteristicas",
+			"time": 865,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Features load must be valid and have a body": true,
+				"Features schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Features load must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Features schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				865
+			],
+			"allTests": [
+				{
+					"Features load must be valid and have a body": true,
+					"Features schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "5973fe94-5a6a-470d-9121-910cd83e93f2",
+			"name": "Find by city and date range",
+			"url": "http://localhost:8080/productos/ciudadyfechas?idCiudad=4&fechaInicial=2022-12-14&fechaFinal=2022-12-16",
+			"time": 2617,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct product returned": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct product returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2617
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct product returned": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3482,
+	"collection": {
+		"requests": [
+			{
+				"id": "25cab17c-1e8a-4d38-b0b1-6ba5eb5c6d3a",
+				"method": "GET"
+			},
+			{
+				"id": "5973fe94-5a6a-470d-9121-910cd83e93f2",
+				"method": "GET"
+			}
+		]
+	}
+}

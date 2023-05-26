@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "Categoria": "Hoteles",
+        "Imagen": "https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "Parrafo": "Parrafo de descripcion hoteles"
+    },
+    {
+        "id": 2,
+        "Categoria": "Hostels",
+        "Imagen": "https://images.unsplash.com/photo-1629794226066-349748040fb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "Parrafo": "Parrafo de descripcion hostels"
+    },
+    {
+        "id": 3,
+        "Categoria": "Casas",
+        "Imagen": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+        "Parrafo": "Parrafo de descripcion casas"
+    },
+    {
+        "id": 4,
+        "Categoria": "ApartHotels",
+        "Imagen": "https://images.unsplash.com/photo-1658218635253-64728f6234be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+        "Parrafo": "Parrafo de descripcion hostels"
+    }
+]

@@ -1,0 +1,179 @@
+{
+	"id": "ca21dc96-12f7-4a06-be83-1d59cdde482e",
+	"name": "PI Grupo 4 - Sprint 1",
+	"timestamp": "2022-11-10T22:00:18.133Z",
+	"collection_id": "22405154-7cbd476b-6c84-4be5-a6ba-9bf6f25af4fd",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 6,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "37f1ac08-9621-41ed-9c52-68b9021f6a21",
+			"name": "Create",
+			"url": "http://localhost:8080/categorias",
+			"time": 149,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				149
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "4cce73f0-d6a2-4d55-937f-5e2e7d839275",
+			"name": "Find by id",
+			"url": "http://localhost:8080/categorias/1",
+			"time": 37,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Successful GET request": true
+				}
+			]
+		},
+		{
+			"id": "95fc3189-219a-49c9-a469-28430073c557",
+			"name": "Find all",
+			"url": "http://localhost:8080/categorias",
+			"time": 62,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Categories load must be valid and have a body": true,
+				"Categories schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Categories load must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Categories schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				62
+			],
+			"allTests": [
+				{
+					"Categories load must be valid and have a body": true,
+					"Categories schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "ea0dd63e-3898-4b2e-992e-1079af0aec2f",
+			"name": "Update",
+			"url": "http://localhost:8080/categorias",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful UPDATE request": true
+			},
+			"testPassFailCounts": {
+				"Successful UPDATE request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Successful UPDATE request": true
+				}
+			]
+		},
+		{
+			"id": "3f79f682-6699-4424-8848-ab1be6e6890a",
+			"name": "Delete",
+			"url": "http://localhost:8080/categorias/1",
+			"time": 11,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Successful DELETE request": true
+			},
+			"testPassFailCounts": {
+				"Successful DELETE request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Successful DELETE request": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 275,
+	"collection": {
+		"requests": [
+			{
+				"id": "37f1ac08-9621-41ed-9c52-68b9021f6a21",
+				"method": "POST"
+			},
+			{
+				"id": "4cce73f0-d6a2-4d55-937f-5e2e7d839275",
+				"method": "GET"
+			},
+			{
+				"id": "95fc3189-219a-49c9-a469-28430073c557",
+				"method": "GET"
+			},
+			{
+				"id": "ea0dd63e-3898-4b2e-992e-1079af0aec2f",
+				"method": "PUT"
+			},
+			{
+				"id": "3f79f682-6699-4424-8848-ab1be6e6890a",
+				"method": "DELETE"
+			}
+		]
+	}
+}

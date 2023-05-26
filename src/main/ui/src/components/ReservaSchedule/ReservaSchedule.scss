@@ -1,0 +1,90 @@
+.reserva-schedule{
+    background-color: var(--background-grey);
+    padding-bottom: 16px;
+    .reserva-content{
+        max-width: 1300px;
+        margin: 0 auto;
+    
+        h2 {
+            padding: 12px 0px 16px 10px;
+        }
+        > div {
+            padding: 18px 10px 12px 10px;
+            width: 96%;
+            margin: 0 auto;
+            border: 1px solid #DFE4EA;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: var(--white);
+            border-radius: 8px;
+            .reserva-text{
+                display: flex;
+                color: var(--black);
+                i {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+            }
+            .reserva-select {
+                position: relative;
+                margin-top: 12px;
+                p {
+                    font-size: 12px;
+                    color: var(--black);
+                }
+                select {
+                    margin-top: 10px;
+                    width: 100%;
+                    padding: 10px;
+                    outline: none;
+                    font-family: 'Quicksand', sans-serif;
+                    border: 1px solid #DFE4EA;
+                    border-radius: 6px;
+
+                    option {
+                        display: none;
+                    }
+                }
+                .select-hour{
+                    position: absolute;
+                    top: 65px;
+                    left: 0;
+                    background-color: var(--white);
+                    z-index: 2;
+                    width: 100%;
+                    padding: 10px 0px 10px 15px;
+                    border: 1px solid #DFE4EA;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    overflow-y: auto;
+                    max-height: 250px;
+                    p {
+                        padding: 1px 0px;
+                        font-size: 14px;
+                        
+                        cursor: pointer;
+                        &:hover{
+                            color: var(--primary-color);
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 768px){
+            h2 {
+                padding-left: 20px;
+            }
+        }
+
+        @media screen and (min-width: 1300px){
+            h2 {
+                padding-left: 0;
+            }
+            >div{
+                width: 100%;
+            }
+        }
+    }
+}

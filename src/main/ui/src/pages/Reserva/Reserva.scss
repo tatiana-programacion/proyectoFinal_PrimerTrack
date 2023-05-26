@@ -1,0 +1,22 @@
+.reserva {
+
+    background-color: var(--background-grey);
+    .product-policies {
+        background-color: var(--white);
+    }
+    @media screen and (min-width: 1024px){
+        .reserva-contents{
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .reserva-content-data {
+                width: 65%;
+            }
+            .reserva-content-details {
+                padding-top: 53px;
+                width: 32%;
+            }
+        }
+    }
+}

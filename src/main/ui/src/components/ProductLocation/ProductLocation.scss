@@ -1,0 +1,22 @@
+.product-location {
+    background-color: var(--soft-grey);
+    padding: 14px 10px;
+    .product-content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .location {
+        width: 60%;
+        color: var(--black);
+        font-size: 14px;
+        display: flex;
+        i {
+            font-size: 14px;
+            padding-right: 6px;
+            position: relative;
+            top: 3px;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+stages:  
+  - backendbuild
+  - backenddeploy    
+  - build
+  - test
+  - deploy
+
+backendbuild:
+    stage: backendbuild
+    image:  maven:3.8.6-openjdk-18-slim
+    script:
+        - echo "Building app..."
+        - mvn clean package
+        - echo "Finished building the app."
+    artifacts:
+        paths:
+            - target/grupo4-backend.jar
+    rules:
+      - when: manual 
+
+backenddeploy:
+    stage: backenddeploy
+    image: alpine:3.11
+    before_script:
+        - apk update && apk add openssh-client bash
+        - mkdir -p ~/.ssh
+        - eval $(ssh-agent -s)
+        - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - touch ~/.ssh/config
+        - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+        - ssh-keyscan -H $DEPLOY_SERVER_IP >> ~/.ssh/known_hosts
+    script:
+        - echo "Deploying started..."
+        - ssh ubuntu@$DEPLOY_SERVER_IP "sudo systemctl stop grupo4.service"
+        - scp ./target/grupo4-backend.jar ubuntu@$DEPLOY_SERVER_IP:~/grupo4/
+        - ssh ubuntu@$DEPLOY_SERVER_IP "sudo systemctl start grupo4.service"
+        - echo "Finished deploying the app."
+ 
+build:       
+  stage: build
+  image: node:latest
+  cache:
+    paths:
+      - src/main/ui/node_modules/
+  script:
+    - echo "Compiling the code..."
+    - cd src/main/ui
+    - npm install
+    - npm run build
+    - echo "Compile complete."
+  artifacts:
+    paths:
+      - src/main/ui/build 
+  rules:
+    - when: manual 
+
+test:   
+  stage: test    
+  script:
+    - echo "Running unit tests..."
+    - echo "Test complete."
+  needs: ["build"]
+
+deploy:      
+  stage: deploy
+  image: 
+    name: amazon/aws-cli
+    entrypoint: [""]
+  script:
+    - echo "Deploying application..."
+    - aws --version
+    - aws s3 rm s3://$S3_BUCKET --recursive
+    - aws s3 cp src/main/ui/build s3://$S3_BUCKET --recursive
+    - echo "Application successfully deployed."
+  dependencies:
+    - build

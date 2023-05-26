@@ -1,0 +1,302 @@
+{
+	"id": "f9c9c587-5cf7-421d-9e7f-a2d509ef5498",
+	"name": "PI Grupo 4 - Sprint 3",
+	"timestamp": "2022-11-25T15:51:33.933Z",
+	"collection_id": "22405154-fbfdbf5a-fcdd-44c9-9ac3-1bf06ac7cecf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 14,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "44aad45a-8fe8-4309-a47c-0ada45a543e8",
+			"name": "Create",
+			"url": "http://localhost:8080/usuarios",
+			"time": 112,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				112
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "a0ae25fd-9da1-4063-a4c6-ad0e04a682d2",
+			"name": "Authenticate",
+			"url": "http://localhost:8080/usuarios/auth",
+			"time": 173,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				173
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "913c5672-6a29-4a39-8aae-2272f7ead46b",
+			"name": "Find by id",
+			"url": "http://localhost:8080/usuarios/1",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct user returned": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct user returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct user returned": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "63f443e7-6efd-4377-9926-f92accc2d438",
+			"name": "Create",
+			"url": "http://localhost:8080/reservas",
+			"time": 31,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "b89a61f3-d49b-4ec5-b8f3-38bab6c6fec7",
+			"name": "Find by id",
+			"url": "http://localhost:8080/reservas/1",
+			"time": 34,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct reservation returned": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct reservation returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct reservation returned": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "b782a1d9-b89e-4a7f-b4ed-fcead4b64f23",
+			"name": "Find all",
+			"url": "http://localhost:8080/reservas",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct reservation returned": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct reservation returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				25
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct reservation returned": true
+				}
+			]
+		},
+		{
+			"id": "2cd831f3-3fa8-4227-90ce-e9413e9d6214",
+			"name": "Find by product",
+			"url": "http://localhost:8080/reservas/producto?id=1",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct reservation returned": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct reservation returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct reservation returned": true
+				}
+			]
+		},
+		{
+			"id": "b0db9417-a0fa-4dca-b167-2d6c26cd1174",
+			"name": "Delete",
+			"url": "http://localhost:8080/reservas/1",
+			"time": 17,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Successful DELETE request": true
+			},
+			"testPassFailCounts": {
+				"Successful DELETE request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"Successful DELETE request": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 417,
+	"collection": {
+		"requests": [
+			{
+				"id": "44aad45a-8fe8-4309-a47c-0ada45a543e8",
+				"method": "POST"
+			},
+			{
+				"id": "a0ae25fd-9da1-4063-a4c6-ad0e04a682d2",
+				"method": "POST"
+			},
+			{
+				"id": "913c5672-6a29-4a39-8aae-2272f7ead46b",
+				"method": "GET"
+			},
+			{
+				"id": "63f443e7-6efd-4377-9926-f92accc2d438",
+				"method": "POST"
+			},
+			{
+				"id": "b89a61f3-d49b-4ec5-b8f3-38bab6c6fec7",
+				"method": "GET"
+			},
+			{
+				"id": "b782a1d9-b89e-4a7f-b4ed-fcead4b64f23",
+				"method": "GET"
+			},
+			{
+				"id": "2cd831f3-3fa8-4227-90ce-e9413e9d6214",
+				"method": "GET"
+			},
+			{
+				"id": "b0db9417-a0fa-4dca-b167-2d6c26cd1174",
+				"method": "DELETE"
+			}
+		]
+	}
+}

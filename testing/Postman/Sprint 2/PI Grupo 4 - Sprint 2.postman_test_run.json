@@ -1,0 +1,351 @@
+{
+	"id": "d958cdf5-6e65-4a58-8307-568fa73a579e",
+	"name": "PI Grupo 4 - Sprint 2",
+	"timestamp": "2022-11-10T22:16:39.310Z",
+	"collection_id": "22405154-c519182a-7356-4917-99cc-556ebb8c2096",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 18,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "f8420b3f-713e-46dd-aab0-52c22b858527",
+			"name": "Create",
+			"url": "http://localhost:8080/ciudades",
+			"time": 136,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				136
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "f2f52e21-72b9-4834-9d1d-e7415efdba41",
+			"name": "Find by id",
+			"url": "http://localhost:8080/ciudades/1",
+			"time": 19,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct product returned": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct product returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct product returned": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "2796ad80-01b9-4ecb-80fa-9adda1fa31f2",
+			"name": "Find all",
+			"url": "http://localhost:8080/ciudades",
+			"time": 52,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct product returned": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct product returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				52
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct product returned": true
+				}
+			]
+		},
+		{
+			"id": "a84f481c-8706-4857-b426-9b8969ca8ab9",
+			"name": "Update",
+			"url": "http://localhost:8080/ciudades",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful PUT request": true,
+				"Correct product updated": true
+			},
+			"testPassFailCounts": {
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct product updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Successful PUT request": true,
+					"Correct product updated": true
+				}
+			]
+		},
+		{
+			"id": "1f7df679-c372-4a30-b9c3-384f59896a01",
+			"name": "Create",
+			"url": "http://localhost:8080/productos",
+			"time": 23,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "f9fc727c-db1d-4367-b110-805b71ef28d0",
+			"name": "Find by id",
+			"url": "http://localhost:8080/productos/1",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct product returned": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct product returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct product returned": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "2e22ca72-6a6d-4bc9-bdd3-78b7f1a61167",
+			"name": "Find by city",
+			"url": "http://localhost:8080/productos/ciudad?id=1",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct product returned": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct product returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct product returned": true
+				}
+			]
+		},
+		{
+			"id": "63e6da9b-5227-49b1-af85-f4e647de2134",
+			"name": "Find all",
+			"url": "http://localhost:8080/productos",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": true,
+				"Correct product returned": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct product returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Successful GET request": true,
+					"Correct product returned": true
+				}
+			]
+		},
+		{
+			"id": "3f509457-745f-46c6-9866-0ec5cad8dc0a",
+			"name": "Update",
+			"url": "http://localhost:8080/productos",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful PUT request": true,
+				"Correct product updated": true
+			},
+			"testPassFailCounts": {
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct product updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Successful PUT request": true,
+					"Correct product updated": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 298,
+	"collection": {
+		"requests": [
+			{
+				"id": "f8420b3f-713e-46dd-aab0-52c22b858527",
+				"method": "POST"
+			},
+			{
+				"id": "f2f52e21-72b9-4834-9d1d-e7415efdba41",
+				"method": "GET"
+			},
+			{
+				"id": "2796ad80-01b9-4ecb-80fa-9adda1fa31f2",
+				"method": "GET"
+			},
+			{
+				"id": "a84f481c-8706-4857-b426-9b8969ca8ab9",
+				"method": "PUT"
+			},
+			{
+				"id": "1f7df679-c372-4a30-b9c3-384f59896a01",
+				"method": "POST"
+			},
+			{
+				"id": "f9fc727c-db1d-4367-b110-805b71ef28d0",
+				"method": "GET"
+			},
+			{
+				"id": "2e22ca72-6a6d-4bc9-bdd3-78b7f1a61167",
+				"method": "GET"
+			},
+			{
+				"id": "63e6da9b-5227-49b1-af85-f4e647de2134",
+				"method": "GET"
+			},
+			{
+				"id": "3f509457-745f-46c6-9866-0ec5cad8dc0a",
+				"method": "PUT"
+			}
+		]
+	}
+}

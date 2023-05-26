@@ -1,0 +1,35 @@
+.product-features {
+    padding: 10px 0px 30px 0px;
+    .product-content {
+        max-width: 1300px;
+        margin: 0 auto;
+        h1 {
+            padding: 12px 10px 10px 10px;
+            border-bottom: 1px solid var(--primary-color);
+        }
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 10px;
+            .feature {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                padding: 12px 0px;
+                width: 50%;
+                i {
+                    font-size: 16px;
+                    padding: 6px;
+                    color: var(--primary-color);
+                }
+            }
+        }
+        @media screen and (min-width: 1024px){ 
+            div {
+                .feature {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
